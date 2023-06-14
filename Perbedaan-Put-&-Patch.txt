@@ -1,0 +1,15 @@
+Perbedaan antara metode PUT dan PATCH dalam HTTP adalah sebagai berikut:
+
+Metode PUT:
+
+Metode PUT digunakan untuk mengganti atau memperbarui seluruh entitas (resource) dengan data yang baru.
+Jika Anda menggunakan metode PUT untuk mengirimkan permintaan update, maka Anda harus mengirimkan seluruh entitas (resource) beserta data yang diperbarui.
+Dalam konteks CRUD, metode PUT digunakan untuk mengganti atau memperbarui data pada suatu entitas dengan data baru yang lengkap.
+Jika suatu atribut tidak diisi dalam permintaan PUT, maka atribut tersebut akan dianggap NULL atau kosong (bergantung pada implementasi server).
+Metode PATCH:
+
+Metode PATCH digunakan untuk melakukan update sebagian dari entitas (resource) dengan data baru.
+Anda hanya perlu mengirimkan data yang ingin diperbarui dalam permintaan PATCH, tanpa harus mengirimkan seluruh entitas.
+Dalam konteks CRUD, metode PATCH digunakan untuk memperbarui sebagian data pada suatu entitas tanpa harus mengganti seluruh entitas.
+Jika suatu atribut tidak diisi dalam permintaan PATCH, maka atribut tersebut akan dianggap tidak berubah atau tidak ada perubahan (bergantung pada implementasi server).
+Dalam praktiknya, metode PUT sering digunakan ketika Anda ingin mengganti seluruh entitas dengan data baru, sementara metode PATCH digunakan ketika Anda ingin memperbarui sebagian data entitas tanpa harus mengganti keseluruhan entitas. Metode PATCH lebih fleksibel dan efisien jika Anda hanya perlu memperbarui beberapa atribut pada entitas tanpa harus mengirimkan data yang tidak berubah.
